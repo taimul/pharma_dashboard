@@ -5,13 +5,14 @@ export default {
     extend: {
       colors: {
         primary: "",
-        secondary: "",
       },
       backgroundColor: {
         primary: "#ECF0F3",
+        secondary: "#F9FAFC",
       },
       textColor: {
         primary: "",
+        secondary: "#6554C0",
       },
       fontFamily: {
         body: ["Barlow"],
