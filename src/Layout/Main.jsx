@@ -8,7 +8,7 @@ const Main = () => {
   const [open, setOpen] = useState(false);
   const [nav, setNav] = useState(false);
   return (
-    <>
+    <div>
       <div className="flex font-body">
         <SideNav open={open} setOpen={setOpen} nav={nav} setNav={setNav} />
         <div className="w-full">
@@ -19,7 +19,7 @@ const Main = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

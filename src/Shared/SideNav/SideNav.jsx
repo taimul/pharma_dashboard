@@ -177,9 +177,9 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
       <div
         className={`${
           nav
-            ? "absolute bg-white w-[270px] left-0 duration-500"
+            ? "absolute bg-white w-[300px] left-0 duration-500"
             : "absolute left-[-300px] duration-500 "
-        } lg:hidden`}
+        } lg:hidden z-50`}
       >
         <div className="">
           <div className="ml-4 my-5 flex justify-between">
