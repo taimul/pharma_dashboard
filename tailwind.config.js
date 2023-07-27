@@ -11,8 +11,13 @@ export default {
         secondary: "#F9FAFC",
       },
       textColor: {
-        primary: "",
-        secondary: "#6554C0",
+        blue: "#6554C0",
+        mediumGreen: "#64C8BC",
+        green: "#45B854",
+        orange: "#FFA958",
+        lightPink: "#FF8A8A",
+        darkBlue: "#3A4C70",
+        darkGray: "#9BA7BF",
       },
       fontFamily: {
         body: ["Barlow"],

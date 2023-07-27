@@ -184,7 +184,10 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
         <div className="">
           <div className="ml-4 my-5 flex justify-between">
             <img src={logo} alt="" />
-            <RxCross2 className="text-2xl" onClick={() => setNav(!nav)} />
+            <RxCross2
+              className="text-2xl cursor-pointer"
+              onClick={() => setNav(!nav)}
+            />
           </div>
 
           <div className="flex items-center space-x-1 mt-4 ml-4">
