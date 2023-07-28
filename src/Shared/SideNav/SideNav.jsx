@@ -19,6 +19,7 @@ import service from "../../assets/service.png";
 import search from "../../assets/search.png";
 import setting from "../../assets/setting.png";
 import autoUpdate from "../../assets/autoUpdate.png";
+import { Link } from "react-router-dom";
 
 const SideNav = ({ open, setOpen, nav, setNav }) => {
   return (
@@ -53,19 +54,24 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
             open ? "grid justify-center mr-2" : "bg-white grid ml-5"
           }`}
         >
-          <button>
+          <Link to="/">
             <h1 className="flex items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3 ">
               <img src={dashboard} alt="" />
               {!open && <span className="ml-2"> Dashboard</span>}
             </h1>
-          </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          </Link>
+
+          <Link
+            to="/customers"
+            className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3"
+          >
             <h1 className="flex items-center">
               <img src={customer} alt="" />
               {!open && <span className="ml-2"> Customer</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
-          </button>
+          </Link>
+
           <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={supplier} alt="" />
