@@ -6,7 +6,7 @@ import Summary from "../../Components/Summary/Summary";
 
 const Home = () => {
   return (
-    <div className="p-4">
+    <div className="p-4 bg-secondary">
       <Statistics />
       <div className="grid lg:grid-cols-2 gap-4">
         <PieCharts />

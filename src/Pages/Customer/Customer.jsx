@@ -3,11 +3,12 @@ import { deleteUser } from "../../app/features/customers/customersSlice";
 import { MdNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { toast } from "react-hot-toast";
 
 const Customer = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.customers.users);
-
+  const notify = () => toast.error("User deleted successfully");
   const removeUser = (id) => {
     dispatch(deleteUser(id));
   };
@@ -23,7 +24,7 @@ const Customer = () => {
           <Link>Customers</Link>
         </div>
       </div>
-      <div className="bg-white rounded-lg mt-7 overflow-auto">
+      <div className="bg-white rounded-2xl mt-7 overflow-auto">
         <table className="table-auto w-full ">
           <thead>
             <tr>
@@ -74,6 +75,7 @@ const Customer = () => {
                     }}
                   >
                     <RiDeleteBin6Line
+                      onClick={notify}
                       className="cursor-pointer mx-auto"
                       size={20}
                     />
@@ -84,57 +86,6 @@ const Customer = () => {
           </tbody>
         </table>
       </div>
-      {/* <table className="table-auto">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th className="">Name</th>
-            <th>User Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Address</th>
-            <th>Company</th>
-            <th>Website</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users?.map(
-            ({
-              id,
-              name,
-              email,
-              address,
-              username,
-              phone,
-              website,
-              company,
-            }) => (
-              <tr key={id}>
-                <td>{id}</td>
-                <td>{name}</td>
-                <td>{username}</td>
-                <td>{email}</td>
-                <td>{phone}</td>
-                <td>{address?.city}</td>
-                <td>{company.name}</td>
-                <td>{website}</td>
-                <td
-                  onClick={() => {
-                    removeUser(id);
-                  }}
-                >
-                  {" "}
-                  <MdDelete
-                    className="mx-auto text-red-500 cursor-pointer"
-                    size={30}
-                  ></MdDelete>{" "}
-                </td>
-              </tr>
-            )
-          )}
-        </tbody>
-      </table> */}
     </div>
   );
 };

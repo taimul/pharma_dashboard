@@ -50,7 +50,7 @@ const data = [
 const AreaCharts = () => {
   return (
     <div className="p-4 bg-white mt-4 w-full rounded-lg overflow-auto">
-      <h1>Best Sales Of The Month</h1>
+      <h1 className="font-bold">Best Sales Of The Month</h1>
       <hr className="mb-7 mt-2" />
       <ResponsiveContainer width="100%" height={300}>
         <AreaChart

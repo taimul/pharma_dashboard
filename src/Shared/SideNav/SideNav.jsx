@@ -32,8 +32,8 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
       >
         {!open && (
           <div className="bg-white ">
-            <div className="ml-4 my-5">
-              <img src={logo} alt="" />
+            <div className="ml-4">
+              <img src={logo} alt="" className="mt-5" />
             </div>
 
             <div className="flex items-center space-x-1 mt-4 ml-4">
@@ -55,7 +55,7 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
           }`}
         >
           <Link to="/">
-            <h1 className="flex items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3 ">
+            <h1 className="flex items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3 ">
               <img src={dashboard} alt="" />
               {!open && <span className="ml-2"> Dashboard</span>}
             </h1>
@@ -63,7 +63,7 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
 
           <Link
             to="/customers"
-            className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3"
+            className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3"
           >
             <h1 className="flex items-center">
               <img src={customer} alt="" />
@@ -72,105 +72,105 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </Link>
 
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={supplier} alt="" />
               {!open && <span className="ml-2"> Supplier</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={inventory} alt="" />
               {!open && <span className="ml-2"> Inventory /Medicine </span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={purchase} alt="" />
               {!open && <span className="ml-2"> Purchase</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={invoice} alt="" />
               {!open && <span className="ml-2"> Invoice</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={returns} alt="" />
               {!open && <span className="ml-2"> Return</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={stock} alt="" />
               {!open && <span className="ml-2"> Stock</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={bank} alt="" />
               {!open && <span className="ml-2"> Bank</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={accounts} alt="" />
               {!open && <span className="ml-2"> Accounts</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={report} alt="" />
               {!open && <span className="ml-2"> Report</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={humanResource} alt="" />
               {!open && <span className="ml-2"> Human Resource</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={tax} alt="" />
               {!open && <span className="ml-2"> Tax</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={service} alt="" />
               {!open && <span className="ml-2"> Service</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={search} alt="" />
               {!open && <span className="ml-2"> Search</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={setting} alt="" />
               {!open && <span className="ml-2"> Application Setting</span>}
             </h1>
             {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={autoUpdate} alt="" />
               {!open && <span className="ml-2"> Autoupdate</span>}
@@ -209,118 +209,121 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
         <hr className="w-full mt-3 mb-4" />
         {/* links */}
         <div className="grid ml-4">
-          <button>
-            <h1 className="flex items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3 ">
+          <Link to="/">
+            <h1 className="flex items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3 ">
               <img src={dashboard} alt="" />
               <span className="ml-2"> Dashboard</span>
             </h1>
-          </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          </Link>
+          <Link
+            to="customers"
+            className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3"
+          >
             <h1 className="flex items-center">
               <img src={customer} alt="" />
               <span className="ml-2"> Customer</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
-          </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          </Link>
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={supplier} alt="" />
               <span className="ml-2"> Supplier</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={inventory} alt="" />
               <span className="ml-2"> Inventory /Medicine </span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={purchase} alt="" />
               <span className="ml-2"> Purchase</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={invoice} alt="" />
               <span className="ml-2"> Invoice</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={returns} alt="" />
               <span className="ml-2"> Return</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={stock} alt="" />
               <span className="ml-2"> Stock</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={bank} alt="" />
               <span className="ml-2"> Bank</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={accounts} alt="" />
               <span className="ml-2"> Accounts</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={report} alt="" />
               <span className="ml-2"> Report</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={humanResource} alt="" />
               <span className="ml-2"> Human Resource</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={tax} alt="" />
               <span className="ml-2"> Tax</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={service} alt="" />
               <span className="ml-2"> Service</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={search} alt="" />
               <span className="ml-2"> Search</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={setting} alt="" />
               <span className="ml-2"> Application Setting</span>
             </h1>
             <MdOutlineNavigateNext className="mr-2 text-xl" />
           </button>
-          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-4 rounded-l-full pl-3">
+          <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
             <h1 className="flex items-center">
               <img src={autoUpdate} alt="" />
               <span className="ml-2"> Autoupdate</span>

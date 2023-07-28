@@ -18,7 +18,7 @@ const PieCharts = () => {
         backgroundPosition: "center",
       }}
     >
-      <h1>Income Express Statement</h1>
+      <h1 className="font-bold">Income Express Statement</h1>
       <div className=" w-full h-[300px] flex justify-center overflow-auto">
         <PieChart width={300} height={300}>
           <Pie
