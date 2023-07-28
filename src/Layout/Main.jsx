@@ -13,7 +13,7 @@ const Main = () => {
         <SideNav open={open} setOpen={setOpen} nav={nav} setNav={setNav} />
         <div className="w-full">
           <Header open={open} setOpen={setOpen} nav={nav} setNav={setNav} />
-          <div className="bg-secondary h-screen">
+          <div className="bg-secondary">
             <Outlet />
           </div>
         </div>

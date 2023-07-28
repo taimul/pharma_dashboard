@@ -9,6 +9,7 @@ export default {
       backgroundColor: {
         primary: "#ECF0F3",
         secondary: "#EDF0F4",
+        green: "#64C8BC",
       },
       textColor: {
         blue: "#6554C0",
