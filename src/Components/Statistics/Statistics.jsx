@@ -7,7 +7,7 @@ import { BsArrowUpShort } from "react-icons/bs";
 const Statistics = () => {
   return (
     <div>
-      <div className="p-4 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-white p-3 rounded-lg flex justify-between">
           <div>
             <h1 className="text-xs">Total customer</h1>
