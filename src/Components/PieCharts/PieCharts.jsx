@@ -43,7 +43,7 @@ const PieCharts = () => {
       </div>
       <div className="flex justify-between text-sm">
         <h1 className="flex items-baseline">
-          <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+          <div className="w-2 h-2 bg-green rounded-full mr-2"></div>
           today
         </h1>
         <h1 className="flex items-baseline">

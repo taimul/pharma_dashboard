@@ -26,7 +26,7 @@ const Customer = () => {
       </div>
       <div className="bg-white rounded-2xl mt-7 overflow-auto">
         <table className="table-auto w-full ">
-          <thead>
+          <thead className="sticky top-0 z-10 bg-white">
             <tr>
               <th className="py-4 border text-start px-2">Id</th>
               <th className="py-4 border text-start px-2">Name</th>

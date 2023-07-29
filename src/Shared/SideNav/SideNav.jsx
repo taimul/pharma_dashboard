@@ -28,7 +28,7 @@ const SideNav = ({ open, setOpen, nav, setNav }) => {
       <div
         className={`${
           open ? "w-[70px]" : "w-[300px]"
-        } duration-300 lg:block hidden`}
+        } duration-300 lg:block hidden border-b-2`}
       >
         {!open && (
           <div className="bg-white ">
